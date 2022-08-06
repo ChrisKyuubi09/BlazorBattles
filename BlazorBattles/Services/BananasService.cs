@@ -13,5 +13,11 @@
         }
 
         void BananasChanged() => OnChanged.Invoke();
-    }
+
+		public void AddBananas(int amount)
+		{
+			Bananas += amount;
+            BananasChanged();
+		}
+	}
 }

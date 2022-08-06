@@ -8,14 +8,12 @@
         @BananaService.Bananas
         @*@Bananas*@
     </span>
-
-    <AddBananas BananasAdded="AddBananas"/>
-
+    <AddBananas/>
 </div>
 
 @code {
-    [Parameter]
-    public int Bananas { get; set; } = 100;
+    //[Parameter]
+    //public int Bananas { get; set; } = 100;
 
     protected override void OnInitialized()
     {
@@ -27,8 +25,8 @@
         BananaService.OnChanged -= StateHasChanged;
     }
 
-    public void AddBananas (int value)
-    {
-        Bananas += value;
-    }
+    //public void AddBananas (int value)
+    //{
+    //    Bananas += value;
+    //}
 }
