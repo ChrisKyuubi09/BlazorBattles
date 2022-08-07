@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorBattles", "BlazorBattles\BlazorBattles.csproj", "{BD8B0679-3F3B-4315-B57C-1B8387BEA68C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorBattles_Shared", "BlazorBattles_Shared\BlazorBattles_Shared.csproj", "{B377662F-AFF0-4255-995A-602AFB8128D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorBattles_Shared", "BlazorBattles_Shared\BlazorBattles_Shared.csproj", "{B377662F-AFF0-4255-995A-602AFB8128D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
