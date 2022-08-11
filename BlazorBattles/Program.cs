@@ -3,6 +3,8 @@ using BlazorBattles.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Blazored.Toast;
+using Microsoft.AspNetCore.Components.Authorization;
+using BlazorBattles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<IBananaService,BananasService>();
 builder.Services.AddScoped<IUnitService, UnitService>();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
 
 var app = builder.Build();
 
